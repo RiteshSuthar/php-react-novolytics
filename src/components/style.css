@@ -1,0 +1,96 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.Nav{
+    background: #448bc9;
+    width: 100%;
+    height: 5vh;
+}
+.main_div{
+    display: flex;
+    height: 80vh;
+}
+.Left_Panel{
+    width: 15%;   
+}
+.Right_Panel{
+  position: relative;
+  width: 85%;
+  height: 95vh;
+}
+form, .file_sec{
+    padding: 10px;
+}
+p{
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-family: monospace;
+}
+.Left_Panel form select{
+    padding: 4px;
+    width: 100%;
+}
+.file_sec{
+    margin-top: 10rem;
+}
+.file_sec .file_inner{
+    border: 1px solid #000;
+    padding: 10px;
+    list-style: none;
+    font-size: 17px;
+    height: 45vh;
+    overflow: auto;
+}
+.file_sec .file_inner li{
+    padding: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+/* Slider */
+.carousel_sec {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  
+}
+.carousel_sec img{
+  width: 800px;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+}
+.carousel_sec .fa-chevron-left{
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  font-size: 50px;
+}
+.carousel_sec .fa-chevron-right{
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  font-size: 50px;
+}
+.slide{
+  opacity: 0;
+  transition-duration: 1s ease;;
+}
+.slide.active{
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+.carousel_list{
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  background-color: red;
+}
+.carousel_list img{
+  width: 100px;
+  height: 100px;
+}
